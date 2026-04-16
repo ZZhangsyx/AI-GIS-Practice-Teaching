@@ -1,106 +1,236 @@
-# AI赋能GIS实践教学 - 开源资源
+# 🎓 AI-Assisted GIS Practice Teaching
 
-本仓库包含《AI赋能高校地理科学专业GIS实践课的创新案例设计》论文配套的开源资源。
+> A human-AI collaborative teaching model for GIS spatial analysis courses in higher education
 
-## 目录结构
+[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.8+-green.svg)](https://www.python.org/)
+[![DOI](https://img.shields.io/badge/DOI-10.5281/zenodo.XXXXXXX-orange.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+
+---
+
+## 📖 Overview
+
+This repository contains the teaching case study and open-source resources for **"AI-Assisted GIS Practice Teaching in Higher Education"**. The project demonstrates how to integrate generative AI tools (like ChatGPT) into GIS practical teaching, using the **Zhaoqing Duanzhou District Ecological Logistics Park Site Selection** as a real-world teaching example.
+
+### 🎯 Key Features
+
+- 🤖 **Human-AI Collaboration** - AI as a "technical collaborator" in GIS teaching
+- 🗺️ **Real Case Study** - Authentic geospatial data from Zhaoqing, Guangdong
+- 📚 **Complete Teaching Workflow** - 4-stage pedagogical model
+- 💻 **Runnable Code** - Python scripts with AI-generated prompts
+
+---
+
+## 🏗️ Project Structure
 
 ```
-open_source/
-├── README.md                      # 本说明文件
-├── README_CN.md                   # 中文说明
-├── code/
-│   ├── GIS_Practice_Workflow.py   # 完整GIS分析工作流
-│   ├── complete_analysis.py        # 多因子评价分析
-│   └── quick_fix.py               # 可视化脚本
-├── data/
-│   └── srtm_59_08.tif            # SRTM DEM数据（肇庆地区）
-├── prompts/
-│   └── AI_Prompts_for_GIS_Practice.md  # AI辅助教学Prompt清单
-└── results/
-    ├── zhaoqing_publication_figures.png   # 分析结果图
-    ├── zhaoqing_multi_factor_analysis.png # 多因子评价图
-    └── ...
+AI-GIS-Practice-Teaching/
+├── README.md              # 📌 You are here
+│
+├── 📁 prompts/           # 💬 AI Prompts for Teaching
+│   └── AI_Prompts_for_GIS_Practice.md
+│       ├── Phase 1: Problem Definition
+│       ├── Phase 2: Data Acquisition
+│       ├── Phase 3: Spatial Modeling
+│       └── Phase 4: Results & Reflection
+│
+├── 📁 code/              # 💻 Python Scripts
+│   ├── GIS_Practice_Workflow.py      # Complete workflow
+│   ├── complete_analysis.py          # Multi-factor evaluation
+│   └── quick_fix.py                 # Visualization
+│
+├── 📁 results/          # 📊 Analysis Results
+│   ├── zhaoqing_publication_figures.png
+│   ├── zhaoqing_multi_factor_analysis.png
+│   └── ...
+│
+└── 📁 data/             # 🗺️ DEM Data (user download)
+    └── README_DATA.md   # Instructions for SRTM data download
 ```
 
-## 内容说明
+---
 
-### 1. AI教学Prompt清单 (prompts/)
-包含四个教学阶段的AI辅助Prompt示例：
-- 阶段一：问题定义
-- 阶段二：数据获取
-- 阶段三：空间建模
-- 阶段四：成果表达
+## 🎓 Teaching Model: 4-Stage Human-AI Collaboration
 
-### 2. Python代码 (code/)
-可运行的Python脚本，包括：
-- 道路网数据获取（OSM）
-- DEM数据分析
-- 多因子加权叠加评价
-- 敏感性分析
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                   Human-AI Collaborative Teaching                    │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                      │
+│    ┌─────────┐         ┌─────────┐         ┌─────────┐              │
+│    │ Teacher │◄──────►│   AI    │◄──────►│ Student │              │
+│    │ (Design)│        │ (Coding)│        │ (Active)│              │
+│    └────┬────┘         └────┬────┘         └────┬────┘              │
+│         │                    │                    │                   │
+│         ▼                    ▼                    ▼                   │
+│    ┌─────────────────────────────────────────────────────────────┐  │
+│    │              4-Stage Teaching Process                        │  │
+│    │                                                              │  │
+│    │   ① Problem Definition ──► ② Data Acquisition ──►          │  │
+│    │         │                         │                          │  │
+│    │         ▼                         ▼                          │  │
+│    │   ③ Spatial Modeling ──► ④ Results & Reflection            │  │
+│    │                                                              │  │
+│    └─────────────────────────────────────────────────────────────┘  │
+│                                                                      │
+└─────────────────────────────────────────────────────────────────────┘
+```
 
-### 3. 分析结果 (results/)
-教学案例分析结果图件
+### Stage 1: Problem Definition (8 class hours)
+> Students collaborate with AI to design analysis framework
 
-### 4. DEM数据 (data/)
-**注意**：由于SRTM数据文件较大（约72MB），数据文件未上传至GitHub。请从以下来源自行下载：
+### Stage 2: Data Acquisition (8 class hours)
+> AI generates code for OSM road network & SRTM DEM extraction
 
-- SRTM 90m 数据: https://srtm.csi.cgiar.org/
-- 研究区使用Tile: srtm_59_08.tif (覆盖东经110-115°, 北纬20-25°)
-- 或从NASA下载: https://www2.jpl.nasa.gov/srtm/
+### Stage 3: Spatial Modeling (12 class hours)
+> AI-assisted multi-factor weighted overlay & sensitivity analysis
 
-## 快速开始
+### Stage 4: Results & Reflection (8 class hours)
+> Report writing & critical reflection on AI limitations
 
-### 1. 克隆仓库
+---
+
+## 🗺️ Case Study: Zhaoqing Logistics Park Site Selection
+
+### Study Area
+- **Location**: Duanzhou District, Zhaoqing City, Guangdong Province
+- **Coordinates**: N22.95-23.25°, E112.35-112.70°
+- **Terrain**: Northern hills, southern alluvial plain
+
+### Evaluation Index System
+
+| Criterion | Factor | Weight | Classification |
+|-----------|--------|--------|----------------|
+| 🚗 Traffic | Highway distance | 20% | 5-level suitability |
+| ⛰️ Terrain | Slope | 25% | 0-3°/3-8°/8-15°/15-25°/>25° |
+| 🌿 Ecology | Water body exclusion | 15% | Distance-based |
+| 📊 Land | Land use compatibility | 10% | Industrial/Construction/Farm |
+
+---
+
+## 📊 Results Visualization
+
+### Multi-factor Suitability Analysis
+
+![Analysis Results](results/zhaoqing_multi_factor_analysis.png)
+
+*Figure: Multi-factor weighted overlay analysis results showing suitability levels*
+
+### Road Network Classification
+
+![Road Network](results/zhaoqing_road_network.png)
+
+*Figure: OpenStreetMap road network classification in Zhaoqing Duanzhou District*
+
+---
+
+## 🚀 Quick Start
+
+### 1. Clone Repository
 ```bash
 git clone https://github.com/ZZhangsyx/AI-GIS-Practice-Teaching.git
+cd AI-GIS-Practice-Teaching
 ```
 
-### 2. 安装依赖
+### 2. Install Dependencies
 ```bash
 pip install osmnx geopandas rasterio numpy scipy matplotlib
 ```
 
-### 3. 运行代码
+### 3. Download DEM Data
+```bash
+# Download SRTM 90m tile from:
+# https://srtm.csi.cgiar.org/
+# Tile: srtm_59_08.tif (covers 110-115°E, 20-25°N)
+# Place in: data/srtm_59_08.tif
+```
+
+### 4. Run Analysis
 ```bash
 cd code
 python GIS_Practice_Workflow.py
 ```
 
-## 研究案例
+---
 
-本教学案例以"肇庆市端州区生态友好型物流园区选址"为例，构建了四阶段人机协同教学模式：
+## 💬 Example AI Prompts
 
-1. **问题定义** - 学生与AI协作确定选址目标和评价指标
-2. **数据获取** - AI生成代码获取OSM道路网和SRTM地形数据
-3. **空间建模** - AI辅助多因子加权叠加分析与敏感性分析
-4. **成果表达** - AI辅助报告撰写与教学反思
-
-## 数据来源
-
-### 道路网数据
-- **来源**: OpenStreetMap (https://www.openstreetmap.org/)
-- **方法**: 通过osmnx库下载
-- **覆盖范围**: 肇庆市端州区 (N22.95-23.25, E112.35-112.70)
-- **统计**: 节点10,031个，道路21,230条
-
-### DEM数据
-- **来源**: SRTM 90m (https://srtm.csi.cgiar.org/)
-- **高程范围**: 1.0m - 960.0m
-- **平均高程**: 114.3m
-
-## 引用
-
-如果使用本教学案例或数据，请引用：
-
+### Prompt 1: Analysis Framework Design
 ```
-AI-Assisted GIS Practice Teaching Case: Ecological Logistics Park Site Selection
-in Zhaoqing Duanzhou District
+请为"肇庆市端州区生态友好型物流园区"GIS选址分析设计一个完整的技术框架，
+包括：数据需求清单、分析步骤流程、评价指标体系、权重确定方法。
 ```
 
-## 许可证
+### Prompt 2: Data Acquisition
+```
+如何使用Python从OpenStreetMap获取肇庆市端州区的道路网数据？
+请给出使用osmnx库的完整代码示例。
+```
 
-MIT License
+### Prompt 3: Weighted Overlay
+```
+请写Python代码实现多因子加权叠加分析，输入5个重分类栅格（值域1-5），
+权重[0.20, 0.15, 0.25, 0.10, 0.30]，计算加权求和并分5级输出。
+```
 
-## 联系方式
+*See [prompts/AI_Prompts_for_GIS_Practice.md](prompts/AI_Prompts_for_GIS_Practice.md) for all 13 prompts*
 
-GitHub: https://github.com/ZZhangsyx/AI-GIS-Practice-Teaching
+---
+
+## 📚 Teaching Evaluation
+
+| Dimension | Weight | Description |
+|-----------|--------|-------------|
+| 📝 AI Interaction Log | 20% | Question precision, logic, critical thinking |
+| 💻 Code Debugging | 20% | Code understanding, error correction |
+| 📊 Site Selection Report | 30% | Scientific rigor, innovation, cartography |
+| 🤔 Reflection Report | 20% | Depth of reflection on AI collaboration |
+
+---
+
+## 🔬 Innovation Points
+
+1. **Paradigm Shift**: From "operation-oriented" to "thinking-oriented" teaching
+2. **"Dual-Teacher" Model**: Teacher + AI collaborative instruction
+3. **Human-AI Literacy**: Cultivating critical AI use for future geographers
+
+---
+
+## 📖 Citation
+
+If you use this teaching case or code in your research, please cite:
+
+```bibtex
+@misc{AIGISPracticeTeaching2026,
+  title = {AI-Assisted GIS Practice Teaching: A Human-AI Collaborative Model},
+  author = {Zhang, S. Y.},
+  year = {2026},
+  publisher = {GitHub},
+  url = {https://github.com/ZZhangsyx/AI-GIS-Practice-Teaching}
+}
+```
+
+---
+
+## 📄 License
+
+MIT License - See [LICENSE](LICENSE) for details.
+
+---
+
+## 🤝 Contributing
+
+Contributions welcome! Please open an issue or submit a pull request.
+
+---
+
+## 📧 Contact
+
+- **GitHub**: [ZZhangsyx/AI-GIS-Practice-Teaching](https://github.com/ZZhangsyx/AI-GIS-Practice-Teaching)
+- **Email**: zzhangsyx@example.edu
+
+---
+
+<p align="center">
+  <strong>⭐ Star this repo if you find it useful!</strong>
+</p>
