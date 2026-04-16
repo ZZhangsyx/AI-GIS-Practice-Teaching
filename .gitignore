@@ -2,6 +2,7 @@
 *.tif
 *.tiff
 *.geotiff
+data/*.tif
 
 # Results (too large)
 results/*.png
@@ -12,3 +13,6 @@ results/*.tif
 cache/
 __pycache__/
 *.pyc
+
+# Python scripts in wrong location
+results/*.py
