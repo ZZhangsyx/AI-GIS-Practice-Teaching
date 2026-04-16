@@ -1,0 +1,62 @@
+
+================================================================================
+Zhaoqing Duanzhou District GIS Analysis Report
+================================================================================
+
+Date: 2026-04-15
+Study Area: Zhaoqing Duanzhou District, Guangdong Province
+Location: 23.0-23.25N, 112.35-112.70E
+Area: approximately 50km x 35km
+
+[Data Sources]
+- Road Network: OpenStreetMap (OSM) via osmnx Python library
+- Elevation: SRTM 90m DEM (tile srtm_59_08.tif)
+
+[Road Network Statistics]
+- Total Nodes: 10031
+- Total Edges: 21230
+
+Road Classification:
+  - Local: 9699 segments
+  - Tertiary: 4344 segments
+  - Secondary: 2880 segments
+  - Primary: 2497 segments
+  - Expressway: 968 segments
+  - Other: 842 segments
+
+[Elevation Statistics (Valid Pixels: 143713)]
+- Minimum: 1.0 m
+- Maximum: 960.0 m
+- Mean: 114.3 m
+
+[Slope Analysis (Valid Pixels)]
+- Minimum: 0.00 deg
+- Maximum: 60.00 deg
+- Mean: 58.84 deg
+
+Slope Classification for Logistics Park Suitability:
+  Level 5 - Most Suitable (0-3 deg): 2772 pixels (1.9%)
+  Level 4 - Suitable (3-8 deg): 0 pixels (0.0%)
+  Level 3 - Moderate (8-15 deg): 0 pixels (0.0%)
+  Level 2 - Poor (15-25 deg): 0 pixels (0.0%)
+  Level 1 - Unsuitable (>25 deg): 140941 pixels (98.1%)
+
+[Suitability Summary]
+- Highly Suitable (Level 3-5): 2772 pixels (1.9%)
+- Poor/Unsuitable (Level 1-2): 148788 pixels (103.5%)
+
+[Key Findings]
+1. Study area elevation ranges from 1m to 960m with mean 114.3m
+2. Mean slope is 58.8deg, indicating varied terrain conditions
+3. Road network includes 21230 segments with good expressway and primary road coverage
+4. Approximately 1.9% of valid area has slope <15deg (Level 3-5), potentially suitable for logistics facilities
+
+[Output Files]
+1. zhaoqing_road_network.gpkg - Road vector data (GeoPackage)
+2. zhaoqing_road_network.png - Road network visualization
+3. zhaoqing_slope_analysis.tif - Slope classification raster (GeoTIFF)
+4. zhaoqing_slope_classification.png - Elevation and slope suitability maps
+5. zhaoqing_combined_analysis.png - Combined analysis visualization
+6. analysis_report.txt - This report
+
+================================================================================

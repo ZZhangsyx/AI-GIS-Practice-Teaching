@@ -1,0 +1,14 @@
+# Large data files
+*.tif
+*.tiff
+*.geotiff
+
+# Results (too large)
+results/*.png
+results/*.gpkg
+results/*.tif
+
+# Cache
+cache/
+__pycache__/
+*.pyc
